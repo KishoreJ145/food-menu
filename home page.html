@@ -1,0 +1,236 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> FOOD MENU</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            background-image:url("—Pngtree—black meat western food banner_1013905.jpg") ;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        #navbar {
+            background-color: #444;
+            padding: 10px;
+        }
+
+        #navbar a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        #navbar a:hover {
+            background-color: rgb(85, 83, 83);
+        }
+
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            }
+
+        .sticky + .content {
+            padding-top: 60px;
+            }
+
+        .menu-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 60px;
+        }
+
+        .menu-item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin: 10px;
+            padding: 10px;
+            width: 200px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+
+        .menu-item:hover {
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .menu-item img {
+            width: 100%;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .menu-item-title { 
+            font-size: 1.2em;
+            margin-bottom: 5px;
+        }
+
+        .menu-item-description {
+            color: #666;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Food Menu</h1>
+    </header>
+
+   
+    <div id="navbar">
+        <a href="Untitled-2.html">Home</a>
+        <a href="Untitled-3.html">Appetizers</a>
+        <a href="untitled-4.html">Main Courses</a>
+        <a href="Untitled-5.html">Desserts</a>
+        <a href="Untitled-6.html">Drinks</a>
+        <a href="Contact.html">Contact</a>
+    </div>
+     
+
+    <div class="menu-container">
+        
+        <div class="menu-item" onclick="selectItem('dosa')">
+            <img src="C:\Users\Kishore\Downloads\Dosa_Classic.jpg" alt="image of dosa">
+            <div class="menu-item-title">Dosa</div>
+            <div class="menu-item-description">A dosa is a thin savory crepe[citation needed] in South Indian cuisine made from a fermented batter of ground black lentils and rice. Dosas are served hot, often with chutney and sambar. Dosas are popular in South Asia as well as around the world.</div>
+        </div>
+            
+            
+        <div class="menu-item" onclick="selectItem('vada')">
+            <img src="C:\Users\Kishore\Downloads\Medu_Vadas.jpg" alt="image of vada">
+            <div class="menu-item-title">Vada</div>
+            <div class="menu-item-description">Vada or Vadai is a category of savoury fried snacks native to India. Vadas can be described variously as fritters, cutlets, or dumplings.[7] Alternative names for this food include vadai, vade, and bada.[8] Vadas are sometimes stuffed with vegetables and traditionally served with chutneys and sambar. </div>
+        </div>
+
+        <div class="menu-item" onclick="selectItem('idli')">
+            <img src="C:\Users\Kishore\Downloads\Idli_Sambar.jpg" alt="image of idli">
+            <div class="menu-item-title">idli</div>
+            <div class="menu-item-description">Idli or idly  is a type of savoury rice cake, originating from South India, popular as a breakfast food in Southern India and in Sri Lanka. The cakes are made by steaming a batter consisting of fermented black lentils (de-husked) and rice. The fermentation process breaks down the starches so that they are more readily metabolised by the body</div>
+        </div>
+
+        <div class="menu-item" onclick="selectItem('poori')">
+            <img src="C:\Users\Kishore\Downloads\Fluffy_Poori.jpg" alt="image of poori">
+            <div class="menu-item-title">poori</div>
+            <div class="menu-item-description">Puri (sometimes spelled as poori) is a deep-fried bread made from unleavened whole-wheat flour that originated in the Indian subcontinent.</div>
+        
+        </div>
+
+        <div class="menu-item" onclick="selectItem('ice cream')">
+            <img src="C:\Users\Kishore\Downloads\Black_sesame_soft_ice_cream.jpg" alt="image of ice cream">
+            <div class="menu-item-title">ice cream</div>
+            <div class="menu-item-description">Ice cream is a frozen dessert typically made from milk or cream that has been flavoured with a sweetener, either sugar or an alternative, and a spice, such as cocoa or vanilla, or with fruit, such as strawberries or peaches. Food colouring is sometimes added in addition to stabilizers.</div>
+        </div>
+
+        <div class="menu-item" onclick="selectItem('donut')">
+            <img src="C:\Users\Kishore\Downloads\Glazed-Donut.jpg" alt="image of donut">
+            <div class="menu-item-title">donut</div>
+            <div class="menu-item-description">A doughnut or donut is a type of food made from leavened fried dough.</div>
+        </div>
+
+        <div class="menu-item" onclick="selectItem('cake')">
+            <img src="C:\Users\Kishore\Downloads\Pound_layer_cake.jpg" alt="image of cake">
+            <div class="menu-item-title">cake</div>
+            <div class="menu-item-description">Cake is a flour confection made from flour, sugar, and other ingredients and is usually baked.</div>
+        </div>
+
+
+
+        
+
+        <div class="menu-item" onclick="selectItem('apple juice')">
+            <img src="C:\Users\Kishore\Downloads\Apfelsaft_im_Glas.jpg" alt="image of apple juice">
+            <div class="menu-item-title">apple juice</div>
+            <div class="menu-item-description">Apple juice is a fruit juice made by the maceration and pressing of an apple. The resulting expelled juice may be further treated by enzymatic and centrifugal clarification to remove the starch and pectin, which holds fine particulate in suspension,</div>
+        </div>
+
+        <div class="menu-item" onclick="selectItem('orange juice')">
+            <img src="C:\Users\Kishore\Downloads\Orangejuice.jpg" alt="image of orange juice">
+            <div class="menu-item-title">orange juice</div>
+            <div class="menu-item-description">Orange juice is a liquid extract of the orange tree fruit, produced by squeezing or reaming oranges.</div>
+        </div>
+
+        <div class="menu-item" onclick="selectItem('pineapple juice')">
+            <img src="C:\Users\Kishore\Downloads\Pina_Colada_Top.jpg" alt="image of pineapple juice">
+            <div class="menu-item-title">pineapple juice</div>
+            <div class="menu-item-description">Pineapple juice is a juice made from pressing the natural liquid out from the pulp of the pineapple (a fruit from a tropical plant).[</div>
+        </div>
+
+        <div class="menu-item" onclick="selectItem('grape juice')">
+            <img src="C:\Users\Kishore\Downloads\Glass_of_grape_juice.jpg" alt="image of grape juice">
+            <div class="menu-item-title">grape juice</div>
+            <div class="menu-item-description">Grape juice is obtained from crushing and blending grapes into a liquid. </div>
+        </div>
+
+        <div class="menu-item" onclick="selectItem('strawberry milkshake')">
+            <img src="C:\Users\Kishore\Downloads\Strawberry_milk_shake_(cropped).jpg" alt="image of milkshake">
+            <div class="menu-item-title">strawberry milkshake</div>
+            <div class="menu-item-description">A milkshake (sometimes simply called a shake) is a sweet beverage made by blending milk, ice cream, and flavorings or sweeteners such as butterscotch, caramel sauce, chocolate syrup, or fruit syrup into a thick, sweet, cold mixture.</div>
+        </div>
+
+
+        
+
+    </div>
+    
+    <footer>
+        <div class="footer-section">
+            <div class="creator-details"> 
+                <h3>About the Creator</h3>
+                <p>Welcome to my digital corner of the world! I'm a passionate explorer of ideas, a curious mind navigating the vast landscapes of knowledge. Whether I'm delving into the realms of technology, unraveling the threads of creativity, or pondering the mysteries of existence, my journey is fueled by a relentless curiosity. Join me as we navigate this virtual tapestry together, where each click unveils a new chapter of discovery. Let's embark on a journey of thought and exploration, weaving the strands of inspiration into the fabric of our shared digital adventure!"</p>
+            </div>
+        </div>
+        &copy; 2023 Food Menu Website
+    </footer>
+
+    <script>
+        function selectItem(itemName) {
+            alert("You selected " + itemName);
+            // Add your logic for handling the selected item here
+        }
+    </script>
+    <script>
+        window.onscroll = function() {myFunction()};
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+        function myFunction() {
+        if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+        } else {
+            navbar.classList.remove("sticky");
+        }
+        }
+    </script>
+
+</body>
+</html>
